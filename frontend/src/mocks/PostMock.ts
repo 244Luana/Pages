@@ -27,9 +27,9 @@ export const mockPosts: PostProps[] = [
   },
   {
     id: "post-5",
-    title: "Os melhores livros para ler antes de morrer",
+    title: "A Menina que Roubava Livros",
     figure: "/livro5.png",
-    autor: "Nadya Berman",
+    autor: "Markus Zusak",
   },
   {
     id: "post-6",
@@ -45,9 +45,9 @@ export const mockPosts: PostProps[] = [
   },
   {
     id: "post-8",
-    title: "Missão Lua 2025",
+    title: "O Livro da Lua 2025",
     figure: "/livro8.png",
-    autor: "Marcos Pontes",
+    autor: "Márcia Mattos",
   },
   {
     id: "post-9",
@@ -59,7 +59,7 @@ export const mockPosts: PostProps[] = [
     id: "post-10",
     title: "O Ministério do Tempo",
     figure: "/livro10.png",
-    autor: "Kali Wallace",
+    autor: "Kaliane Bradley",
   },
   {
     id: "post-11",
@@ -81,21 +81,21 @@ export const mockPosts: PostProps[] = [
   },
   {
     id: "post-14",
-    title: "Um destino selado em sangue",
+    title: "Um destino tatuado em sangue",
     figure: "/livro14.png",
     autor: "Danielle L. Jensen",
   },
   {
     id: "post-15",
-    title: "A Biblioteca da Meia-Noite",
+    title: "A cinco passos de você",
     figure: "/livro15.png",
-    autor: "Matt Haig",
+    autor: "Rachael Lippincott",
   },
   {
     id: "post-16",
-    title: "A Biblioteca das Almas",
+    title: "A Biblioteca da Meia-Noite",
     figure: "/livro16.png",
-    autor: "Ransom Riggs",
+    autor: "Matt Haig",
   },
   {
     id: "post-17",
@@ -107,7 +107,7 @@ export const mockPosts: PostProps[] = [
     id: "post-18",
     title: "Os sete maridos de Evelyn Hugo",
     figure: "/livro18.png",
-    autor: "Taylor Jenkins Reid",
+    autor: "Taylor Jekkins Reid",
   },
   {
     id: "post-19",
@@ -117,32 +117,14 @@ export const mockPosts: PostProps[] = [
   },
   {
     id: "post-20",
-    title: "Cem Anos de Solidão",
+    title: "Café com Deus Pai",
     figure: "/livro20.png",
-    autor: "Gabriel García Márquez",
+    autor: "Junior Rostirola",
   },
   {
     id: "post-21",
     title: "Flores para Algernon",
     figure: "/livro21.png",
     autor: "Daniel Keyes",
-  },
-  {
-    id: "post-22",
-    title: "A Revolução dos Bichos",
-    figure: "/livro22.png",
-    autor: "George Orwell",
-  },
-  {
-    id: "post-23",
-    title: "O Diário de Anne Frank",
-    figure: "/livro23.png",
-    autor: "Anne Frank",
-  },
-  {
-    id: "post-24",
-    title: "A Cabana",
-    figure: "/livro24.png",
-    autor: "William P. Young",
   },
 ];

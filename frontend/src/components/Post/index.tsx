@@ -1,24 +1,19 @@
-import { Link } from "react-router-dom";
-import { SMain } from "./styles";
-import type { PostListProps } from "../../types/PostType";
+import type { PostProps } from "../../types/PostType";
 
-export function Post({ posts }: PostListProps) {
+type Props = {
+  posts: PostProps[];
+};
+
+export function Post({ posts }: Props) {
   return (
-    <SMain>
+    <section style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
       {posts.map((post) => (
-        <section key={post.id} className="categoria">
-          <header>
-            <h3>{post.title}</h3>
-            <div>
-              <h5>{post.autor}</h5>
-            </div>
-          </header>
-          <div className="carrossel">
-            <img src={post.figure} alt={post.title} />
-          </div>
-          <Link to={`/details/${post.id}`}>Ver</Link>
-        </section>
+        <div key={post.id} style={{ width: "150px", textAlign: "center" }}>
+          <img src={post.figure} alt={post.title} style={{ width: "100%" }} />
+          <h3>{post.title}</h3>
+          <p>{post.autor}</p>
+        </div>
       ))}
-    </SMain>
+    </section>
   );
 }
