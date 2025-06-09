@@ -1,17 +1,14 @@
-import { Footer } from './components/Footer'
-import { Header } from './components/Header'
-import { LoginForm } from './components/LoginForm'
+import { AppRoutes } from "./routes";
+import { AuthProvider } from "./contexts/AuthProvider"; 
+import { GlobalStyle } from './styles/global';
 
 function App() {
-  
-
   return (
-    <>
-      <Header></Header>
-      <LoginForm></LoginForm>
-      <Footer />
-    </>
-  )
+    <AuthProvider>
+      <GlobalStyle />
+      <AppRoutes />
+    </AuthProvider>
+  );
 }
 
-export default App
+export default App;

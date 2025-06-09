@@ -1,31 +1,117 @@
-import { SSignin } from "./styles";
-import imagemSignIn from "../../assets/ImagemSignIn.png"; 
+import { useState } from 'react';
 
-export function SigninForm() {
+type SigninData = {
+  name: string;
+  email: string;
+  password: string;
+  confirmPassword: string;
+  nascimento: string;
+  endereco: string;
+  celular: string;
+  idioma: string;
+};
+
+type SigninFormProps = {
+  onSubmit: (data: SigninData) => void;
+  isLoading?: boolean;
+};
+
+export function SigninForm({ onSubmit, isLoading = false }: SigninFormProps) {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [nascimento, setNascimento] = useState('');
+  const [endereco, setEndereco] = useState('');
+  const [celular, setCelular] = useState('');
+  const [idioma, setIdioma] = useState('');
+  const [error, setError] = useState<string | null>(null);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setError(null);
+
+    if (password !== confirmPassword) {
+      setError('As senhas não coincidem!');
+      return;
+    }
+
+    const data: SigninData = {
+      name,
+      email,
+      password,
+      confirmPassword,
+      nascimento,
+      endereco,
+      celular,
+      idioma,
+    };
+
+    onSubmit(data); 
+  };
+
   return (
-    <SSignin>
-      <section>
-        <h1>Bem Vindo!</h1>
-        <form>
-          <label htmlFor="nomecompleto">Nome Completo:</label>
-          <input type="text" id="nomecompleto" placeholder="Digite seu nome completo" />
-
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" placeholder="Digite seu email" />
-
-          <label htmlFor="senha">Senha:</label>
-          <input type="password" id="senha" placeholder="Digite uma nova senha" />
-
-          <label htmlFor="confirmaçaosenha">Confirmação da Senha:</label>
-          <input type="password" id="confirmaçaosenha" placeholder="Digite a senha novamente" />
-
-          <a href="index.html">Cadastrar</a>
-
-          <p>Já tem uma conta? <a href="login.html">ENTRE</a></p>
-        </form>
-      </section>
-
-      <img src={imagemSignIn} alt="Imagem de leitura" />
-    </SSignin>
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        placeholder="Nome completo"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        required
+      />
+      <input
+        type="email"
+        placeholder="E-mail"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+      <input
+        type="date"
+        placeholder="Data de Nascimento"
+        value={nascimento}
+        onChange={(e) => setNascimento(e.target.value)}
+        required
+      />
+      <input
+        type="text"
+        placeholder="Endereço"
+        value={endereco}
+        onChange={(e) => setEndereco(e.target.value)}
+        required
+      />
+      <input
+        type="tel"
+        placeholder="Celular"
+        value={celular}
+        onChange={(e) => setCelular(e.target.value)}
+        required
+      />
+      <input
+        type="text"
+        placeholder="Idioma"
+        value={idioma}
+        onChange={(e) => setIdioma(e.target.value)}
+        required
+      />
+      <input
+        type="password"
+        placeholder="Senha"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        required
+      />
+      <input
+        type="password"
+        placeholder="Confirme a senha"
+        value={confirmPassword}
+        onChange={(e) => setConfirmPassword(e.target.value)}
+        required
+      />
+      <button type="submit" disabled={isLoading}>
+        {isLoading ? 'Cadastrando...' : 'Cadastrar'}
+      </button>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+    </form>
   );
 }

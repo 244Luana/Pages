@@ -1,0 +1,148 @@
+import type { PostProps } from "../types/PostType";
+
+export const mockPosts: PostProps[] = [
+  {
+    id: "post-1",
+    title: "O menino do pijama listrado",
+    figure: "/livro1.png",
+    autor: "John Boyne",
+  },
+  {
+    id: "post-2",
+    title: "O Pequeno Príncipe",
+    figure: "/livro2.png",
+    autor: "Antoine de Saint-Exupéry",
+  },
+  {
+    id: "post-3",
+    title: "Torto Arado",
+    figure: "/livro3.png",
+    autor: "Itamar Vieira Junior",
+  },
+  {
+    id: "post-4",
+    title: "Orgulho e Preconceito",
+    figure: "/livro4.png",
+    autor: "Jane Austen",
+  },
+  {
+    id: "post-5",
+    title: "Os melhores livros para ler antes de morrer",
+    figure: "/livro5.png",
+    autor: "Nadya Berman",
+  },
+  {
+    id: "post-6",
+    title: "Bíblia Sagrada",
+    figure: "/livro6.png",
+    autor: "Diversos autores",
+  },
+  {
+    id: "post-7",
+    title: "Corte de Espinhos e Rosas",
+    figure: "/livro7.png",
+    autor: "Sarah J. Maas",
+  },
+  {
+    id: "post-8",
+    title: "Missão Lua 2025",
+    figure: "/livro8.png",
+    autor: "Marcos Pontes",
+  },
+  {
+    id: "post-9",
+    title: "Never Flinch",
+    figure: "/livro9.png",
+    autor: "Stephen King",
+  },
+  {
+    id: "post-10",
+    title: "O Ministério do Tempo",
+    figure: "/livro10.png",
+    autor: "Kali Wallace",
+  },
+  {
+    id: "post-11",
+    title: "Tormenta",
+    figure: "/livro11.png",
+    autor: "C.J. Tudor",
+  },
+  {
+    id: "post-12",
+    title: "Tempestade de Ônix",
+    figure: "/livro12.png",
+    autor: "Rebecca Yarros",
+  },
+  {
+    id: "post-13",
+    title: "Esperança para um novo dia",
+    figure: "/livro13.png",
+    autor: "Mensagens de fé",
+  },
+  {
+    id: "post-14",
+    title: "Um destino selado em sangue",
+    figure: "/livro14.png",
+    autor: "Danielle L. Jensen",
+  },
+  {
+    id: "post-15",
+    title: "A Biblioteca da Meia-Noite",
+    figure: "/livro15.png",
+    autor: "Matt Haig",
+  },
+  {
+    id: "post-16",
+    title: "A Biblioteca das Almas",
+    figure: "/livro16.png",
+    autor: "Ransom Riggs",
+  },
+  {
+    id: "post-17",
+    title: "A Culpa é das Estrelas",
+    figure: "/livro17.png",
+    autor: "John Green",
+  },
+  {
+    id: "post-18",
+    title: "Os sete maridos de Evelyn Hugo",
+    figure: "/livro18.png",
+    autor: "Taylor Jenkins Reid",
+  },
+  {
+    id: "post-19",
+    title: "É assim que acaba",
+    figure: "/livro19.png",
+    autor: "Colleen Hoover",
+  },
+  {
+    id: "post-20",
+    title: "Cem Anos de Solidão",
+    figure: "/livro20.png",
+    autor: "Gabriel García Márquez",
+  },
+  {
+    id: "post-21",
+    title: "Flores para Algernon",
+    figure: "/livro21.png",
+    autor: "Daniel Keyes",
+  },
+  {
+    id: "post-22",
+    title: "A Revolução dos Bichos",
+    figure: "/livro22.png",
+    autor: "George Orwell",
+  },
+  {
+    id: "post-23",
+    title: "O Diário de Anne Frank",
+    figure: "/livro23.png",
+    autor: "Anne Frank",
+  },
+  {
+    id: "post-24",
+    title: "A Cabana",
+    figure: "/livro24.png",
+    autor: "William P. Young",
+  },
+];
