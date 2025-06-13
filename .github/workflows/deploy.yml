@@ -21,9 +21,11 @@ jobs:
         with:
           node-version: 22.15
 
-      - name: Instalar dependências
+      - name: Limpar cache do npm e Instalar dependências
         # run: npm ci
-        run: npm i
+        run: |
+          npm cache clean --force
+          npm i
 
       - name: Rodar os testes
         run: npm run test
