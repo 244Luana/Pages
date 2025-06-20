@@ -14,8 +14,7 @@ export function ForgotPassword() {
   return (
     <>
       <Header />
-      <main className="forgot-password-container">
-        <h1>Recuperar Senha</h1>
+      <main className="forgotpasswordcontainer">
         <PasswordForm onSubmit={handleRecover} />
       </main>
       <Footer />

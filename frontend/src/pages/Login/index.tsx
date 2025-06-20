@@ -31,7 +31,7 @@ export function Login() {
         <h1>Bem-vindo de volta</h1>
         <LoginForm onSubmit={handleLogin} isLoading={isLoading} /> 
         {error && <p style={{ color: 'red' }}>{error}</p>}
-
+        <Link to="/forgotpassword">Esqueci a Senha</Link>
         <p>Não tem uma conta? <Link to="/signin">Cadastre-se</Link></p>
       </section>
       <img src={ImagemLogin} alt="Ilustração Login" />

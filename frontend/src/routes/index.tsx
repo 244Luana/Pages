@@ -25,7 +25,9 @@ export function AppRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signin" element={<Signin />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/myprofile" element={<ForgotPassword />} />
+          <Route path="/reviews" element={<ForgotPassword />} />
 
           <Route path="*" element={<div>404 - Página não encontrada</div>} />
         </Routes>
