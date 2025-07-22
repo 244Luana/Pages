@@ -1,4 +1,4 @@
-import type { PostProps } from "../types/PostType";
+import type { PostProps } from "../types/BookType";
 
 export const mockPosts: PostProps[] = [
   {

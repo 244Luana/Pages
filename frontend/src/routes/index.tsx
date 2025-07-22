@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { AuthProvider } from "../contexts/AuthProvider";
+import { AuthProvider } from "../contexts/AuthContext";
 import { useAuth } from "../hooks/useAuth";
-
+import { MyProfile } from "../pages/MyProfile"
 import Home from "../pages/Home";
 import { Login } from "../pages/Login";
 import { Signin } from "../pages/Signin";
@@ -26,7 +26,7 @@ export function AppRoutes() {
           <Route path="/login" element={<Login />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
-          <Route path="/myprofile" element={<ForgotPassword />} />
+          <Route path="/perfil" element={<MyProfile />} />
           <Route path="/reviews" element={<ForgotPassword />} />
 
           <Route path="*" element={<div>404 - Página não encontrada</div>} />

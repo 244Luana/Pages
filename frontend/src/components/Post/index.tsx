@@ -1,7 +1,7 @@
-import type { PostProps } from "../../types/PostType";
+import type { BookProps } from "../../types/BookType";
 
 type Props = {
-  posts: PostProps[];
+  posts: BookProps[];
 };
 
 export function Post({ posts }: Props) {
